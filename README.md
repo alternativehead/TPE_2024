@@ -1,5 +1,7 @@
 # TPE_2024
 
+## Tema
+Venta de albumes de musica
 ## Integrantes
 Salvador Tucci González.
 
