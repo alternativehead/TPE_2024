@@ -6,9 +6,6 @@ function UserMiddleware($res) {
         $res->user->id_user = $_SESSION['ID_USER'];
         $res->user->email = $_SESSION['EMAIL_USER'];
         return;
-    } else {
-        //header('Location: ' . BASE_URL . 'ShowLogin');
-        //die();
     }
 }
 
