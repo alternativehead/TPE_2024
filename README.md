@@ -15,8 +15,8 @@ la tabla "albumes" contiene como clave primaria a "id_album" con un auto increme
 la tabla "bandas" contiene como clave primaria a "id_banda" con un auto incrementar.
 
 # Informacion Necesaria
-la Contrasenia del usuario "Demo" con el email "Demo@gmail.com" es: 123456789
-para el correcto funcionamiento de la pagina se necesita tener la carpeta "smarty-master" localizada por fuera de la raiz del proyecto
+la Contrasenia del usuario "Demo" con el email "Demo@gmail.com" es: 123456789  
+para el correcto funcionamiento de la pagina se necesita tener la carpeta "smarty-master" localizada por fuera de la raiz del proyecto  
 ejemplo:
 ```plaintext
 smarty-master/
