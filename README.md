@@ -16,6 +16,7 @@ la tabla "bandas" contiene como clave primaria a "id_banda" con un auto incremen
 la tabla "usuarios" contiene como clave primaria "id_usuario" con un auto incrementar
 
 # Informacion Necesaria
+Si al escribir la URL como "localhost/Raiz/Home" no funciona, llevando a una pagina en blanco, intentar con escribir "http://" ejemplo: "http://localhost/Raiz/Home". Desconozco el porqué de este error
 la Contrasenia del usuario "Demo" con el email "Demo@gmail.com" es: 123456789  
 para el correcto funcionamiento de la pagina se necesita tener la carpeta "smarty-master" localizada por fuera de la raiz del proyecto  
 ejemplo:
