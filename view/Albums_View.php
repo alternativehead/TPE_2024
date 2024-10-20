@@ -2,7 +2,7 @@
 
 use Smarty\Compile\Tag\Assign;
 use Smarty\Smarty;
-//require_once './route.php';
+
 require_once '../smarty-master/libs/Smarty.class.php';
 
 class AlbumsView {

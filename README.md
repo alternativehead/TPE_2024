@@ -35,7 +35,7 @@ Se sube una foto cuando se crea el ítem (por URL).
 Administrar Categorías (entidad del lado 1 de la relación):  
 Lista de Categorías (Bands).  
 Agregar Categorías (ShowCreateBand).  
-Eliminar Categorias (DeleteBand/id).  
+Eliminar Categorias (DeleteBand/id y ConfirmDeleteBand/id en caso de que la banda a eliminar contenga uno o mas albumes).  
 Editar Categorías (ShowEditBand/id).  
 
 

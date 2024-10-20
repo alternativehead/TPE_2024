@@ -3,20 +3,20 @@ require_once './model/Albums_Model.php';
 require_once './view/Albums_View.php';
 class AlbumsController
 {
-    private $model;
+    private $model_albums;
     private $model_bands;
     private $view;
 
     public function __construct($res)
     {
-        $this->model = new AlbumsModel();
+        $this->model_albums = new AlbumsModel();
         $this->model_bands = new BandsModel();
         $this->view = new AlbumsView($res->user);
     }
 
     public function showHome()
     {
-        $albums_bands = $this->model->getAll();
+        $albums_bands = $this->model_albums->getAll();
         $this->view->showHome($albums_bands);
     }
 
@@ -25,7 +25,7 @@ class AlbumsController
         if (!isset($_SESSION['ID_USER'])) { #comprueba si no se esta logueado
             header('Location:' . BASE_URL . "ShowLogin"); #se redirige al ShowLogin
         } else { #esta logueado, tiene los permisos
-            $row_album = $this->model->getAlbum($id_album);
+            $row_album = $this->model_albums->getAlbum($id_album);
             $bandas = $this->model_bands->getBands();
             $this->view->showEdit($row_album, $bandas);
         }
@@ -53,13 +53,13 @@ class AlbumsController
                 $i++;
             }
             if ($j != 0) { #si j fue incrementado
-                $row_album = $this->model->getAlbum($id_album);
+                $row_album = $this->model_albums->getAlbum($id_album);
                 $bands = $this->model_bands->getBands();
                 $this->view->ShowEdit($row_album, $bands, $j); #mando j por parametro que representaria la cantidad de campos vacios
             } else {
-                $row_album = $this->model->getAlbum($id_album);
+                $row_album = $this->model_albums->getAlbum($id_album);
                 array_push($array, $id_album); #pongo id_album como ultimo elemento del array
-                $this->model->updateTables($array);
+                $this->model_albums->updateTables($array);
                 header("Location:" . BASE_URL . "Home");
             }
         }
@@ -70,7 +70,7 @@ class AlbumsController
         if (!isset($_SESSION['ID_USER'])) { #comprueba si no se esta logueado
             header('Location:' . BASE_URL . "ShowLogin"); #se redirige al ShowLogin
         } else { #esta logueado, tiene los permisos
-            $this->model->deleteAlbumRow($id_album);
+            $this->model_albums->deleteAlbumRow($id_album);
             header("Location:" . BASE_URL . "Home");
         }
     }
@@ -103,7 +103,7 @@ class AlbumsController
                 $bands = $this->model_bands->getBands();
                 $this->view->showCreateAlbum($bands, $j);
             } else {
-                $this->model->createAlbum($array);
+                $this->model_albums->createAlbum($array);
                 header('Location:' . BASE_URL . 'Home');
             }
         }
@@ -111,13 +111,13 @@ class AlbumsController
 
     public function showDescription($id_album)
     {
-        $description = $this->model->getDescription($id_album);
+        $description = $this->model_albums->getDescription($id_album);
         $this->view->showDescription($description);
     }
 
     public function showDiscography($id_band)
     {
-        $discography = $this->model->getDiscography($id_band);
+        $discography = $this->model_albums->getDiscography($id_band);
         $this->view->showDiscography($discography);
     }
 }

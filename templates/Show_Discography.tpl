@@ -1,7 +1,7 @@
 {include file='Header.tpl'}
 
 <body class="text-white p-2" style="background-color: #1a1a1a;">
-    <a class="text-blue text-decoration-none" href="../Home">Volver</a>
+    <a class="text-blue text-decoration-none" href="../Bands">Volver</a>
     <table class="table table-dark table-striped table table-bordered">
         <thead>
             <tr>

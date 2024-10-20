@@ -97,5 +97,10 @@ switch ($params[0]) {
         $controller = new BandsController($res);
         $controller->deleteBand($params[1]);
     break;
+    case 'ConfirmDeleteBand':
+        UserMiddleware($res);
+        $controller = new BandsController($res);
+        $controller->confirmDeleteBand($params[1]);
+    break;
 }
 ?>

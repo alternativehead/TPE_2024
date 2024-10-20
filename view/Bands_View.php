@@ -28,7 +28,13 @@ class BandsView {
         $this->smarty->assign('band',$band);
         $this->smarty->assign('error',$error);
         $this->smarty->display('./templates/Form_Edit_Band.tpl');
+    }
 
+    public function showConfirmDelete($id_band, $caution, $confirm){
+        $this->smarty->assign('caution', $caution);
+        $this->smarty->assign('id_band', $id_band);
+        $this->smarty->assign('confirm', $confirm);
+        $this->smarty->display('./templates/Confirm_Delete_Band.tpl');
     }
 }
 ?>
