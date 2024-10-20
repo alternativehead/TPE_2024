@@ -13,7 +13,31 @@ a Día de la fecha la base de datos consta de tres tablas con una relacion de 1 
 
 la tabla "albumes" contiene como clave primaria a "id_album" con un auto incrementar, y contiene a "id_banda" como clave foránea relacionandola con "id_banda" de la tabla "bandas".  
 la tabla "bandas" contiene como clave primaria a "id_banda" con un auto incrementar.  
-la tabla "usuarios" contiene como clave primaria "id_usuario" con un auto incrementar
+la tabla "usuarios" contiene como clave primaria "id_usuario" con un auto incrementar.  
+  
+
+Home = Se visualizan todos los ítems cargados con el nombre de la categoría a la que pertenece.  
+Description = SE visualiza cada ítem particularmente.  
+Bands =  Se visualiza un listado con todas las categorías cargadas.  
+Discography =  Se visualiza los ítems perteneciente a una categoría seleccionada.  
+ShowLogin = El usuario administrador debe loguearse con usuario y contraseña.  
+Logout = El usuario debe poder desloguearse.  
+
+Solo los usuarios logueados pueden modificar las categorías y los ítems: 
+
+Administrar Ítems (entidad del lado N de la relación):  
+Lista de Items (Home).  
+Agregar Items ( se elige la categoría a la que pertenecen utilizando un select que muestre el nombre de la misma) (ShowCreateAlbum/id).  
+Eliminar Items (DeleteAlbum/id).  
+Editar Items (ShowEditAlbum/id).  
+Se sube una foto cuando se crea el ítem (por URL).
+
+Administrar Categorías (entidad del lado 1 de la relación):  
+Lista de Categorías (Bands).  
+Agregar Categorías (ShowCreateBand).  
+Eliminar Categorias (DeleteBand).  
+Editar Categorías (ShowEditBand).  
+
 
 # Informacion Necesaria
 la Contrasenia del usuario "Demo" con el email "Demo@gmail.com" es: 123456789  

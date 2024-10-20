@@ -13,7 +13,7 @@
     <table class="table table-dark table-striped table table-bordered">
         <thead>
             <tr>
-                <th>band</th>
+                <th>banda</th>
                 <th>album</th>
                 <th>año de lanzamiento</th>
                 <th>genero</th>
