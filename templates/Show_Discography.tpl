@@ -1,9 +1,8 @@
 {include file='Header.tpl'}
 
-<a href="../Home">volver</a>
-
-<body>
-    <table>
+<body class="text-white p-2" style="background-color: #1a1a1a;">
+    <a class="text-blue text-decoration-none" href="../Home">Volver</a>
+    <table class="table table-dark table-striped table table-bordered">
         <thead>
             <tr>
                 <th>album</th>
@@ -16,16 +15,16 @@
         <tbody>
             {foreach from=$discography item=discography}
                 <tr>
-                    <td>{$discography->album|escape:"html"}</td> {* el escape es el equivalente que tiene smarty al htmlspecialchars *}
+                    <td>{$discography->album|escape:"html"}</td>
+                    {* el escape es el equivalente que tiene smarty al htmlspecialchars *}
                     <td>{$discography->anio_de_lanzamiento|escape:"html"}</td>
                     <td>{$discography->genero|escape:"html"}</td>
                     <td>{$discography->descripcion|escape:"html"}</td>
-                    <td><img src="{$discography->imagen}" alt=""></td>
+                    <td><img class="img-thumbnail w-25" src="{$discography->imagen}" alt=""></td>
                 </tr>
             {/foreach}
         </tbody>
     </table>
-
-    {include file='Footer.tpl'}
-
 </body>
+
+{include file='Footer.tpl'}
