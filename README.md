@@ -11,7 +11,7 @@ Salvador Tucci González.
 ## Comportamiento
 a Día de la fecha la base de datos consta de tres tablas con una relacion de 1 a N, donde, una banda (tabla "bandas") corresponde a varios álbumes (tabla "albumes").
 
-la tabla "albumes" contiene como clave primaria a "id_album" con un auto incrementar, y contiene a "id_banda" como clave foránea relacionandola con "id_banda" de la tabla "bandas".
+la tabla "albumes" contiene como clave primaria a "id_album" con un auto incrementar, y contiene a "id_banda" como clave foránea relacionandola con "id_banda" de la tabla "bandas".  
 la tabla "bandas" contiene como clave primaria a "id_banda" con un auto incrementar.  
 la tabla "usuarios" contiene como clave primaria "id_usuario" con un auto incrementar
 
