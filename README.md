@@ -21,17 +21,17 @@ ejemplo:
 ```plaintext
 smarty-master/
 TPE_2024/
-├── controller/
-├── db/
-├── libs/
-├── middlewares/
-├── model/
-├── templates/
-├── templates_c/
-├── view/
-├── .gitignore
-├── .htaccess
-├── config.php
-├── README.md
-└── route.php
+  ├── controller/
+  ├── db/
+  ├── libs/
+  ├── middlewares/
+  ├── model/
+  ├── templates/
+  ├── templates_c/
+  ├── view/
+  ├── .gitignore
+  ├── .htaccess
+  ├── config.php
+  ├── README.md
+  └── route.php
 ```
