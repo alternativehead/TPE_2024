@@ -27,7 +27,7 @@ Solo los usuarios logueados pueden modificar las categorías y los ítems:
 
 Administrar Ítems (entidad del lado N de la relación):  
 Lista de Items (Home).  
-Agregar Items ( se elige la categoría a la que pertenecen utilizando un select que muestre el nombre de la misma) (ShowCreateAlbum/id).  
+Agregar Items ( se elige la categoría a la que pertenecen utilizando un select que muestre el nombre de la misma) (ShowCreateAlbum).  
 Eliminar Items (DeleteAlbum/id).  
 Editar Items (ShowEditAlbum/id).  
 Se sube una foto cuando se crea el ítem (por URL).
@@ -35,8 +35,8 @@ Se sube una foto cuando se crea el ítem (por URL).
 Administrar Categorías (entidad del lado 1 de la relación):  
 Lista de Categorías (Bands).  
 Agregar Categorías (ShowCreateBand).  
-Eliminar Categorias (DeleteBand).  
-Editar Categorías (ShowEditBand).  
+Eliminar Categorias (DeleteBand/id).  
+Editar Categorías (ShowEditBand/id).  
 
 
 # Informacion Necesaria
