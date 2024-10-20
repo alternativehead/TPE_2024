@@ -18,17 +18,20 @@ la tabla "bandas" contiene como clave primaria a "id_banda" con un auto incremen
 la Contrasenia del usuario "Demo" con el email "Demo@gmail.com" es: 123456789
 para el correcto funcionamiento de la pagina se necesita tener la carpeta "smarty-master" localizada por fuera de la raiz del proyecto
 ejemplo:
+```plaintext
 smarty-master/
 TPE_2024/
-  ├── controller/
-  ├── db/
-  ├── libs/
-  ├── middlewares/
-  ├── model/
-  ├── templates/
-  ├── view/
-  ├── .gitignore
-  ├── .htaccess
-  ├── config.php
-  ├── README.md
-  └── route.php
+├── controller/
+├── db/
+├── libs/
+├── middlewares/
+├── model/
+├── templates/
+├── templates_c/
+├── view/
+├── .gitignore
+├── .htaccess
+├── config.php
+├── README.md
+└── route.php
+```
